@@ -3,10 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Main Page</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+    <style>
+
+        #navb{background-color: pink;}
+
+         .bg-pink {background-color: pink;}
+  
+          .nav-link {
+              font-size: 15px;
+              font-weight: bold;
+          }
+  
+          .nav-link:hover {
+              color: #ff899e !important;
+          }
+  
+          .btn-primary {
+              background-color: #ff69b4;
+              border-color: #ff69b4;
+          }
+  
+          .btn-primary:hover {
+              background-color: #ff1493;
+              border-color: #ff1493;
+          }
+
+          #searchb{font-family: "Playfair";
+                    color: pink;}
+
+            #searchb{font-family: "Playfair";
+                    color: pink;}
+
+            #searchbt{font-family: "Playfair";
+                      background-color: white;
+                    color: #ff899e;}
+
+    #abt, #why, #purp, #cre{background-color: pink;
+          margin: 20px auto;
+          margin-left: 5px;
+          margin-right: 5px;
+          padding: 15px;
+          text-align: justify;}
+
+          #abt{margin-left: 20px;}
+          #cre{margin-right: 20px;}
+    
+
+    summary, details{font-size: 18px;}
+
+   p{color: white;
+      font-family: "Playfair";}
+
+    summary{color: #ff899e;
+          font-family: "Playfair";}
+
+    #abt{font-size: 24px;
+      text-align: justify;}
+
+    </style>
+
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-pink" id="navb">
+
+<div class="container-fluid">
+  <a class="navbar-brand" href=""><img src="https://i.pinimg.com/736x/e2/90/c7/e290c7cd6312c4dc51071c517fbab1b6.jpg" alt="logo" class="" style="height: 65px; width: auto;"></a>
+    
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      
+      <ul class="navbar-nav me-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: rgb(255, 255, 255); font-family: Petit Formal Script;">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="rates.html" style="color: rgb(255, 255, 255); font-family: Petit Formal Script;">Rates</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: rgb(255, 255, 255); font-family: Petit Formal Script;">Registration</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: rgb(255, 255, 255); font-family: Petit Formal Script;">Schedule</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: #ffffff; font-family: Petit Formal Script;">Help</a>
+        </li>
+
+      </ul>
+
+      <form class="d-flex">
+
+      <input class="form-control me-2" type="text" placeholder="Search" id="searchb">
+        
+      <button class="btn btn-light" type="button" id="searchbt">Search</button>
+
+      </form>
+
+    </div>
+
+</div>
+
+</nav>
+
+<br><br>
+
+<h2 style="text-align: center; color: pink; font-family: Playfair;"> Welcome to the offical website of Maxi Taxi! <h2> <br>
+
+<div class="row" id="welc">
+
+  
+
+  <div class="col-lg" id="abt">
+
+        <details class="ontoggle">
+        <summary>About Maxi Taxi</summary>
+        <br>
+        <p id="instruct">
+          
+          Maxi Taxi is a travel service for <u> women and women only</u>. That means no adult men are allowed to ride! Sorry, not sorry. 
+          
+        </p>
+        <p>
+
+          
+          Our taxi service provides booking online and in real life. For <u>onsite booking</u>, just go to your nearest Maxi Taxi stall (usually at malls) and let the staff guide you. For <u>online booking</u>, go to our website or dowload the app (for extra perks) and click book a ride.
+        
+
+        </p>
+
+        <p>
+
+          
+          If you're a man reading this, don't worry! You can still book our taxis but <u>on behalf of a woman</u>. This can help your daughters, sisters, and other family get home safely if you're not able to accompany them. 
+        
+
+        </p>
+        </details>
+
+  </div>
+
+  <div class="col-lg" id="why">
+
+        <details class="ontoggle">
+        <summary>Why choose Maxi Taxi?</summary>
+        <p id="instruct"> <br>
+          
+          Compared to other ride services, our rules, regulations, and safety policies are <u>stricter</u>, making sure that all our passengers will arrive home wihtout a sweat. It is also <u>inclusive</u>, with our vehicles having wheelchair options, bigger or smaller seatbelts,adjustable seating, etc. Just make sure to check the options you ned when booking a ride!
+
+        </p>
+        </details>
+
+  </div>
+
+  <div class="col-lg" id="purp">
+
+        <details class="ontoggle">
+        <summary>Our Purpose</summary>
+        <p id="instruct"> <br>
+          
+         
+          Maxi Taxi ensures than women and children will be <u>safe</u> from danger. This includes sexual assault, rape, drugging, stalking, etc. It's to prevent anything bad happening to you and your loved ones. We also aim to make a space where women will feel safe and calm. 
+
+        
+        </p>
+        </details>
+
+  </div>
+
+  <div class="col-lg" id="cre">
+
+        <details class="ontoggle">
+        <summary>The Creators of Maxi Taxi</summary>
+        <p id="instruct"><br>
+          
+          Maria Alexandria Coronel and Francess Ann Mathea Sevilla are your dear creators of Maxi Taxi! 
+
+        </p>
+        </details>
+
+  </div>
+
+
+
+</div>
     
 </body>
 </html>
