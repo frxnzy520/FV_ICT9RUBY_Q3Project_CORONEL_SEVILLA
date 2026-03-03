@@ -43,27 +43,36 @@
                       background-color: white;
                     color: #ff899e;}
 
-    #abt, #why, #purp, #cre{background-color: pink;
-          margin: 20px auto;
-          margin-left: 5px;
-          margin-right: 5px;
-          padding: 15px;
-          text-align: justify;}
 
-          #abt{margin-left: 20px;}
-          #cre{margin-right: 20px;}
-    
+                     #boody{background-color: pink;
+       
+            padding: 30px;
+            margin: 50px;}
 
-    summary, details{font-size: 18px;}
+    #pfp{border-radius: 50%;}
 
-   p{color: white;
-      font-family: "Playfair";}
+    #rowo{text-align: center;
+        padding-top: 50px;
+        border-right: 2px solid white;
+        padding: 20px;}
 
-    summary{color: #ff899e;
-          font-family: "Playfair";}
+    #myFile{margin-left: 90px;}
 
-    #abt{font-size: 24px;
-      text-align: justify;}
+    button{background-color: rgb(255, 255, 255);
+            
+            color:#ff899e;
+            }
+
+    #reset{background-color: rgb(255, 255, 255);
+            
+            color: #ff899e;
+            }
+
+    label{color: #ffffff;}
+
+    #form{padding: 20px;}
+
+
 
     </style>
 
@@ -84,7 +93,7 @@
       <ul class="navbar-nav me-auto">
         
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: rgb(255, 255, 255); font-family: Petit Formal Script;">Home</a>
+          <a class="nav-link" href="index.html" style="color: rgb(255, 255, 255); font-family: Petit Formal Script;">Home</a>
         </li>
 
         <li class="nav-item">
@@ -120,87 +129,76 @@
 
 </nav>
 
-<br><br>
+<div class="row" id="boody">
 
-<h2 style="text-align: center; color: pink; font-family: Playfair;"> Welcome to the offical website of Maxi Taxi! <h2> <br>
-
-<div class="row" id="welc">
-
-  
-
-  <div class="col-lg" id="abt">
-
-        <details class="ontoggle">
-        <summary>About Maxi Taxi</summary>
-        <br>
-        <p id="instruct">
-          
-          Maxi Taxi is a travel service for <u> women and women only</u>. That means no adult men are allowed to ride! Sorry, not sorry. 
-          
-        </p>
-        <p>
-
-          
-          Our taxi service provides booking online and in real life. For <u>onsite booking</u>, just go to your nearest Maxi Taxi stall (usually at malls) and let the staff guide you. For <u>online booking</u>, go to our website or dowload the app (for extra perks) and click book a ride.
-        
-
-        </p>
-
-        <p>
-
-          
-          If you're a man reading this, don't worry! You can still book our taxis but <u>on behalf of a woman</u>. This can help your daughters, sisters, and other family get home safely if you're not able to accompany them. 
-        
-
-        </p>
-        </details>
-
-  </div>
-
-  <div class="col-lg" id="why">
-
-        <details class="ontoggle">
-        <summary>Why choose Maxi Taxi?</summary>
-        <p id="instruct"> <br>
-          
-          Compared to other ride services, our rules, regulations, and safety policies are <u>stricter</u>, making sure that all our passengers will arrive home wihtout a sweat. It is also <u>inclusive</u>, with our vehicles having wheelchair options, bigger or smaller seatbelts,adjustable seating, etc. Just make sure to check the options you ned when booking a ride!
-
-        </p>
-        </details>
-
-  </div>
-
-  <div class="col-lg" id="purp">
-
-        <details class="ontoggle">
-        <summary>Our Purpose</summary>
-        <p id="instruct"> <br>
-          
-         
-          Maxi Taxi ensures than women and children will be <u>safe</u> from danger. This includes sexual assault, rape, drugging, stalking, etc. It's to prevent anything bad happening to you and your loved ones. We also aim to make a space where women will feel safe and calm. 
-
-        
-        </p>
-        </details>
-
-  </div>
-
-  <div class="col-lg" id="cre">
-
-        <details class="ontoggle">
-        <summary>The Creators of Maxi Taxi</summary>
-        <p id="instruct"><br>
-          
-          Maria Alexandria Coronel and Francess Ann Mathea Sevilla are your dear creators of Maxi Taxi! 
-
-        </p>
-        </details>
-
-  </div>
-
-
-
-</div>
+    <div class="col-lg" id="rowo">
     
+       <img src="https://i.pinimg.com/736x/ed/c6/bf/edc6bf9626f5552f2ae1111f09d02b7b.jpg" alt="pfp" style="width:200px; height:200px; border: solid rgb(255, 255, 255);" id="pfp">
+       <br>
+       <br>
+       <input type="file" id="myFile" name="filename" >
+       <br>
+       <button type="button" style="width: 36%;">Submit Photo</button>
+
+    </div>
+
+    <div class="col-lg" id="form">
+
+        <h1 style="color: rgb(255, 255, 255);">Registration</h1>
+        <br>
+
+        <details class="ontoggle">
+            <summary style="color: rgb(255, 255, 255);">Instructions</summary>
+            <p id="instruct" style="color: rgb(255, 255, 255);">Fill out the form to register and you can be able to book a carraige ride!</p>
+        </details>
+        <br>
+        
+        <form action="#">
+
+        <label for="name">Full name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name..." style="width: 100%;"><br><br>
+
+        <div class="row">
+        
+            <div class="col-lg">
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" placeholder="Enter your age..." style="width: 100%;"> 
+
+            </div>
+
+            <div class="col-lg">
+
+            <label for="pn">Phone Number:</label><br>
+            <input type="pn" id="pn" name="pn" placeholder="Enter your phone number..." style="width: 100%;">
+
+            </div>
+        
+        </div>
+
+        <br>
+
+        <label for="em">Email:</label><br>
+        <input type="email" id="em" name="em" placeholder="Enter your email..." style="width: 100%;"><br><br>
+
+        <label for="user">Username:</label><br>
+        <input type="text" id="user" name="user" placeholder="Enter your username..." style="width: 100%;"><br><br>
+
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" name="pass" placeholder="Enter your password..." style="width: 100%;"><br><br>
+
+        <input type="checkbox" id="terms" name="terms" value="terms">
+		<label for="terms">I accept the Terms of Use and Privacy Policy</label>
+		<br><br>
+
+        <button type="submit" id="submit" name="submit" style="width: 100%;">Register</button><br>
+        <input type="reset" name="reset" id="reset" value="Clear Form" style="width: 100%;">
+
+
+
+        </form>
+
+    </div>
+
 </body>
 </html>
