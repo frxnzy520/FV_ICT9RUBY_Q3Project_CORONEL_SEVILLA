@@ -10,6 +10,36 @@
 
     <style>
 
+        .pinterest-grid {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.pinterest-grid img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(255, 196, 232);
+  break-inside: avoid;
+}
+
+
+@media (max-width: 992px) {
+  .pinterest-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .pinterest-grid {
+    column-count: 1;
+  }
+}
+.icon-img {
+  max-width: 80px;
+  opacity: 0.9;
+}
+
         #navb{background-color: pink;}
 
          .bg-pink {background-color: pink;}
@@ -52,7 +82,8 @@
 
           #abt{margin-left: 20px;}
           #cre{margin-right: 20px;}
-    
+
+        
 
     summary, details{font-size: 18px;}
 
@@ -65,15 +96,25 @@
     #abt{font-size: 24px;
       text-align: justify;}
 
+      #welc {
+    align-items: flex-start;
+      }
 
-    img{height: 500px;
-        width: auto;
-        border:  solid 3px pink;
-        border-radius: 30px;
-        align-items: center;
-        display: block;
-  margin-left: auto;
-  margin-right: auto;}
+      details {
+  cursor: pointer;
+}
+
+summary {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+    
+     
 
     </style>
 
@@ -102,7 +143,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="registration.html" style="color: rgb(255, 255, 255); font-family: Petit Formal Script;">Registration</a>
+          <a class="nav-link" href="#" style="color: rgb(255, 255, 255); font-family: Petit Formal Script;">Registration</a>
         </li>
 
 
@@ -132,7 +173,7 @@
 
 <br><br>
 
-<h2 style="text-align: center; color: pink; font-family: Playfair;"> Welcome to the offical website of Maxi Taxi! <h2> <br>
+<h2 style="text-align: center; color: pink;"> ᗯᕮᒪᑕOᗰᕮ TO Tᕼᕮ OᖴᖴIᑕᗩᒪ ᗯᕮᗷSITᕮ Oᖴ ᗰᗩ᙭I Tᗩ᙭I<h2> <br>
 
 <div class="row" id="welc">
 
@@ -212,28 +253,50 @@
 
 </div>
 
-<br>
-<h2 style="text-align: center; color: pink;"> Women's comfort ride!</h2>
+<h2 style="text-align: center; color: pink;"> ⱲƠӍᗴŊ'𐒖 𝙲ƠӍƑƠɌƮ ɌI𝙳ᗴ~!</h2>
 
 <div class="container my-5">
   <div class="pinterest-grid">
-    
-    <img src="https://i.pinimg.com/1200x/f7/90/7d/f7907d634aaeba25b9494e7aea4fb7a5.jpg"> 
-    <br><br>
+    <img src="https://i.pinimg.com/1200x/f7/90/7d/f7907d634aaeba25b9494e7aea4fb7a5.jpg">
     <img src="https://i.pinimg.com/1200x/01/b6/75/01b6754d4684e7cb6d507226ece18439.jpg">
-    <br><br>
     <img src="https://i.pinimg.com/1200x/53/8d/50/538d50c225cc9781dbd1184f48f2438a.jpg">
-    <br><br>
     <img src="https://i.pinimg.com/736x/07/13/70/07137098c20a567c203de5193005ffe9.jpg">
-    <br><br>
+
     <img src="https://i.pinimg.com/736x/a0/e7/e0/a0e7e09cc82b03c532f36fa187d8e445.jpg">
-    <br><br>
     <img src="https://i.pinimg.com/736x/3f/41/9b/3f419be222ad189e2244ef1e6d74097e.jpg">
-    <br><br>
     <img src="https://i.pinimg.com/1200x/7b/a8/ef/7ba8ef421fbfcdb13b48b6ee9885b8d1.jpg">
-    <br><br>
-    <img src="https://i.pinimg.com/736x/d9/06/28/d9062862bd1c0ab9c8385d6631c4f4b9.jpg">
-    <br><br>
+    
+
+    
+    
+     <img src="https://i.pinimg.com/736x/d9/06/28/d9062862bd1c0ab9c8385d6631c4f4b9.jpg">
+     
+     
+     
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row text-center g-4">
+    <div class="col-4 col-md-2 mx-auto">
+      <img src="https://i.pinimg.com/1200x/0f/f2/da/0ff2da139addc2702e3b6972a48ff4ec.jpg" class="img-fluid icon-img">
+    </div>
+
+    <div class="col-4 col-md-2 mx-auto">
+      <img src="https://i.pinimg.com/736x/14/53/df/1453df646dbbbdf571bd7825171dc31b.jpg" class="img-fluid icon-img rounded-circle">
+    </div>
+    <div class="col-4 col-md-2 mx-auto">
+      <img src="https://i.pinimg.com/1200x/0a/3c/7c/0a3c7c1838d25f1c6e3f762fc5555676.jpg" class="img-fluid icon-img">
+    </div>
+  </div>
+</div>
+
+<footer class="bg-pink text-center text-white py-3">
+
+  <p> Coronel, Sevilla | 9-RUBY @ 2026 </p>
+  <p> Maxi Taxi. All rights reserved.</p>
+</footer>
+
     
 </body>
 </html>
