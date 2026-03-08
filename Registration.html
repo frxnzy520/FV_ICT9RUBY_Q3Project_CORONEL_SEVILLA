@@ -113,13 +113,13 @@
 
       </ul>
 
-      <div class="d-flex">
+      <form class="d-flex">
 
       <input class="form-control me-2" type="text" placeholder="Search" id="searchb">
         
       <button class="btn btn-light" type="button" id="searchbt">Search</button>
 
-	  </div>
+      </form>
 
     </div>
 
@@ -127,7 +127,6 @@
 
 </nav>
 
-<div class="container">
 <div class="row" id="boody">
 
     <div class="col-lg" id="rowo">
@@ -140,8 +139,6 @@
        <button type="button" style="width: 36%;">Submit Photo</button>
 
     </div>
-	</div>
-	</div>
 
     <div class="col-lg" id="form">
 
@@ -150,11 +147,10 @@
 
         <details class="ontoggle">
             <summary style="color: rgb(255, 255, 255);">Instructions</summary>
-    		<p id="instruct" style="color: rgb(255, 255, 255);"> Fill out the form to register and you can be able to book a carriage ride!</p>
-			
+            <p id="instruct" style="color: rgb(255, 255, 255);">Fill out the form to register and you can be able to book a carriage ride!</p>
         </details>
         <br>
-		
+        
         <form action="confirmation.html">
 
         <label for="name">Full name:</label><br>
@@ -172,13 +168,11 @@
             <div class="col-lg">
 
             <label for="pn">Phone Number:</label><br>
-            <input type="tel" id="pn" name="pn" placeholder="Enter your phone number..." style="width: 100%;">
+            <input type="pn" id="pn" name="pn" placeholder="Enter your phone number..." style="width: 100%;">
 
             </div>
         
         </div>
-
-	
 
         <br>
 
@@ -191,16 +185,21 @@
         <label for="pass">Password:</label><br>
         <input type="password" id="pass" name="pass" placeholder="Enter your password..." style="width: 100%;"><br><br>
 
-        <input type="checkbox" id="terms" name="terms" value="terms" required>
+        <input type="checkbox" id="terms" name="terms" value="terms">
+
+
 		<label for="terms">I accept the Terms of Use and Privacy Policy</label>
 		<br><br>
 
+      <a href="confirmation.html"><button type="submit" id="submit" name="submit" style="width: 100%;">Register</button></a>
 
-	<button type="submit" id="submit" name="submit" style="width: 100%;">Register</button>
+        <input type="reset" name="reset" id="reset" value="Clear Form" style="width: 100%;">
 
-	<input type="reset" name="reset" id="reset" value="Clear Form" style="width: 100%;">
-</form>
-</div>
-</div>
+
+
+        </form>
+
+    </div>
+
 </body>
 </html>
