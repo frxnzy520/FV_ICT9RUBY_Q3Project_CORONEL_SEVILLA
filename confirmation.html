@@ -84,6 +84,7 @@
 footer{
     margin-top:auto;
     border-top: 2px solid white;
+	position: bottom;
 }
 
     
@@ -141,32 +142,41 @@ footer{
 
 </nav>
 
+
 <div class="container mt-5">
-    <div class="alert alert-success text-center" role="alert">
-        <h4 class="alert-heading">Registration Successful!</h4>
-        <p>Thank you for registering for the event. We look forward to seeing you there!</p>
 
-        <p class="mb-0">Your registration details have been sent to your email address.</p>
-        <p>
-	<a href="#" onclick="message1()" style="color:#ff899e;">
-	Click here to verify email
-	</a>
-	</p>
+<div class="alert alert-success text-center">
 
-        
-        <i id="message"></i>
+<h4 class="alert-heading">Registration Successful!</h4>
 
-        <hr>
-        <p class="mb-0">If you have any questions, please contact us at <a href="mailto:info@event.com" style="color: #ff899e;">info@event.com</a>
+<p>Thank you for registering for the event. We look forward to seeing you there!</p>
 
-            </p>
-        
-         </div>
-        </div>
+<p>Your registration details have been sent to your email address.</p>
+
+<p>
+<a href="#" onclick="message1()" style="color:#ff899e;">
+Click here to verify email
+</a>
+</p>
+
+<div id="message"></div>
+
+<hr>
+
+<p>If you have any questions, please contact us at
+<a href="mailto:info@event.com" style="color:#ff899e;">
+info@event.com
+</a>
+</p>
+
+</div>
+</div>
 
 <footer class="bg-pink text-center text-white py-3 mt-5">
-  <p>Coronel, Sevilla | 9-RUBY @ 2026</p>
-  <p>Maxi Taxi. All rights reserved.</p>
+
+<p>Coronel, Sevilla | 9-RUBY @ 2026</p>
+<p>Maxi Taxi. All rights reserved.</p>
+
 </footer>
 <script>
             function message1(){
