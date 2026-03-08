@@ -74,7 +74,7 @@
       details {
   cursor: pointer;
       }
-
+		 
 		 body{
     min-height:100vh;
     display:flex;
@@ -83,6 +83,7 @@
 
 footer{
     margin-top:auto;
+    border-top: 2px solid white;
 }
 
     
@@ -146,7 +147,11 @@ footer{
         <p>Thank you for registering for the event. We look forward to seeing you there!</p>
 
         <p class="mb-0">Your registration details have been sent to your email address.</p>
-        <summary><u>Click here to verify email </u></summary>
+        <p>
+	<a href="#" onclick="message1()" style="color:#ff899e;">
+	Click here to verify email
+	</a>
+	</p>
 
         
         <i id="message"></i>
